@@ -114,7 +114,7 @@ nav {
   height: 25px;
   font-size: 0.8rem;
   border-radius: 50%;
-  background-color: #0b9d8a;
+  background-color: #eb3b5a;
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -183,42 +183,63 @@ nav {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  background-image: url(../images/full_skate.jpeg);
 }
-.f-slide-1 {
-  background-image: url(../images/Slider_01.jpg);
-}
-.f-slide-2 {
-  background-image: url(../images/Slider_02.jpg);
-}
+
 .f-slide-3 {
   background-image: url(../images/Slider_03.jpg);
 }
-.slider-text-container {
+/* .slider-text-container {
   width: 80%;
   height: 90%;
   display: flex;
   align-items: center;
-}
+} */
 .f-slider-text {
   display: flex;
-  flex-direction: column;
-  margin-right: auto;
 }
-.f-slider-text strong {
+/* .f-slider-text strong {
   color: #333333;
   font-size: 3rem;
   line-height: 55px;
   margin-top: 10px;
   letter-spacing: 1px;
+} */
+.gradiant-bg {
+  text-transform: uppercase;
+  font-size: 72px;
+  font-weight: bold;
+  background: linear-gradient(
+    45deg,
+    #eccf8b,
+    #fbd558,
+    #fecd1c,
+    #ad9d4a,
+    #5f571a
+  );
+  background-size: 40%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: gradient 5s infinite;
 }
-.f-slider-text span {
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+/* .f-slider-text span {
   text-transform: uppercase;
   letter-spacing: 6px;
   font-weight: 500;
   color: #666666;
   font-size: 1.2rem;
-}
-.f-slider-btn {
+} */
+/* .f-slider-btn {
   width: 170px;
   height: 40px;
   display: flex;
@@ -229,12 +250,20 @@ nav {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-top: 14px;
-}
-.f-slider-text strong font {
+} */
+/* .f-slider-text strong font {
   color: #0b9d8a;
-}
+} */
 
 /*------------------ show-product -------------------------*/
+.text-heading strong {
+  font-size: 1.5rem;
+  color: #1b1919;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 40px;
+  padding: 5px 30px;
+}
 .arrival-heading strong {
   font-size: 1.2rem;
   letter-spacing: 1px;
@@ -338,6 +367,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 3%;
 }
 
 /*------------------ Sale Offer Boxes -----------------------*/
@@ -351,8 +381,9 @@ nav {
 }
 .sale-box {
   width: 280px;
+  height: 270px;
   border-radius: 20px;
-  margin: 20px;
+  margin: 10px;
   position: relative;
   /* flex-grow: 0.5; */
 }
@@ -381,6 +412,7 @@ nav {
 }
 
 /* ------------ banner ---------------------- */
+
 .banner-box {
   width: 100%;
   height: 40vh;
@@ -388,7 +420,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(../images/Slider_03.jpg);
+  background-image: url(../images/banner_skate.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -535,7 +567,8 @@ footer {
     font-size: 0.9rem;
   }
   .f-slider-text strong,
-  .banner-text strong {
+  .banner-text strong,
+  .gradiant-bg i {
     font-size: 2rem;
     line-height: 40px;
   }
@@ -554,6 +587,10 @@ footer {
   .navigation {
     padding: 10px;
   }
+  .gradiant-bg i {
+    font-size: 1.5rem;
+    line-height: 25px;
+  }
   .f-slider-text strong,
   .banner-text strong {
     font-size: 1.2rem;
@@ -561,7 +598,7 @@ footer {
   }
   .full-slider-box,
   .banner-box {
-    height: 30vh;
+    height: 25vh;
   }
   .f-slider-text span,
   .banner-text span {
