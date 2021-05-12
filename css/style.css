@@ -152,6 +152,12 @@ nav {
 }
 
 /*------------------ show-product -------------------------*/
+.text-heading {
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
 .product-container {
   width: 90%;
   display: flex;
